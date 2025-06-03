@@ -158,3 +158,29 @@ while (contador <= 10) {
     //Decrementar
     regressiva--
 }
+/**
+* Dicionários 
+*/
+let pessoa = {
+"nome" : "Mateus",
+"idade" : "21",
+"cidadeUF" : "Castro/PR",
+"Profissão" : "Modelo",
+}
+console.log(pessoa)
+console.log(pessoa['nome'])
+console.log(pessoa.nome)
+//Mudar item
+pessoa['nome'] = "Mateus Machinski"
+pessoa.cidadeUF = "Castro-PR"
+console.log(pessoa)
+pessoa['linguagem'] ="JS"
+pessoa.framework = 'React.js'
+console.log(pessoa)
+//Deletar 
+delete pessoa.framework
+console.log(pessoa)
+/Desestruturador (destrutor)
+const {linguagem, cidadeUF} = pessoa
+console.log(linguagem, cidadeUF)
+
